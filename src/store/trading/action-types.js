@@ -1,0 +1,5 @@
+export const tradingActionTypes = {
+    SET_TIMESTAMP: 'SET_TIMESTAMP',
+    SET_INSTRUMENT: 'SET_INSTRUMENT',
+    SET_EXCHANGE_RATES: 'SET_EXCHANGE_RATES',
+};

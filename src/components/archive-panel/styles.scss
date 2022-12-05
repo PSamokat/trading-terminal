@@ -1,0 +1,43 @@
+div {
+  box-sizing: border-box;
+}
+
+.table {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 0;
+
+  &__item {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding: 0.3em;
+  }
+
+  &__side {
+    width: calc(100% / 10);
+  }
+  &__price {
+    width: calc(100% / 10 * 2);
+  }
+  &__instrument {
+    width: calc(100% / 10 * 3);
+  }
+  &__volume {
+    width: calc(100% / 12 * 2);
+  }
+  &__time {
+    width: calc(100% / 12 * 5);
+  }
+}
+.SELL {
+  color: red;
+}
+.BUY {
+  color: green;
+}
+.header {
+  font-size: large;
+  color: #2f2f2f;
+  border-bottom: 3px solid lightgrey;
+}

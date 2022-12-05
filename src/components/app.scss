@@ -1,0 +1,11 @@
+.container {
+  max-width: 550px;
+  border: 1px solid;
+  border-radius: 5px
+}
+.wrap {
+  position: relative;
+}
+.panel, .table {
+  min-height: 350px;
+}

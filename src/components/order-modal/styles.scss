@@ -1,0 +1,74 @@
+.modal {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0,0,0,0.2);
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    box-sizing: border-box;
+    background: white;
+    border: 1px solid grey;
+    border-radius: 5px;
+  }
+  &__header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid gray;
+    padding: 10px;
+  }
+  &__order {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 10px;
+    font-weight: bold;
+    .buy {
+      color: green;
+    }
+    .sell {
+      color: red;
+    }
+  }
+  &__volume {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-weight: bold;
+  }
+  &__buttons {
+    display: flex;
+    flex-flow: row-reverse;
+    gap: 10px;
+    padding: 10px;
+
+
+    &--ok {
+      background-color: dodgerblue;
+    }
+    &--close {
+      background-color: dimgrey;
+    }
+    &--close, &--ok {
+      width: 90px;
+      height: 25px;
+      cursor: pointer;
+      color: white;
+      border: 1px solid gray;
+      border-radius: 5px;
+    }
+  }
+  &__X {
+    cursor: pointer;
+  }
+}
